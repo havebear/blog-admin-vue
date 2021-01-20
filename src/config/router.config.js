@@ -2,7 +2,7 @@
  * @Author: 616749285@qq.com
  * @Date: 2021-01-20 14:38:44
  * @LastEditors: 616749285@qq.com
- * @LastEditTime: 2021-01-20 15:06:10
+ * @LastEditTime: 2021-01-20 17:55:27
  * @Description:  路由配置
  */
 
@@ -12,11 +12,18 @@ export const routers = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path: 'article',
+        name: 'Article',
+        component: () => import('@/views/article/Index')
+      }
+    ]
   },
   {
     path: '/login',
     name: 'Login',
-    component: () => import('@/views/account/Login.vue')
+    component: () => import('@/views/account/Login')
   }
 ]
