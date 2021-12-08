@@ -1,7 +1,7 @@
 /*
- * @Author: 616749285@qq.com
+ * @Author: BGG
  * @Date: 2021-01-20 16:34:11
- * @LastEditors: 616749285@qq.com
+ * @LastEditors: BGG
  * @LastEditTime: 2021-01-20 16:34:40
  * @Description:  按需加载，剔除掉了一些不需要的Antd组件。
  * 减少了编译支持库包大小
